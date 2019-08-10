@@ -1,0 +1,7 @@
+<div class="bg-danger" style="width: 370px ;height: 100%">
+<app-user [user]="currenUser"  ></app-user>
+  <app-search></app-search>
+  <div *ngFor="let user of listUser">
+    <app-user  [user]="user" ></app-user>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div style="background: aqua" class="container">
+  <img src="{{user.avatar}}" width="50" height="50" alt="Avatar">{{user.name}}
+  <div>
+  <div class="spinner-grow text-success" *ngIf="user.status === 'online'"></div>
+  <span>{{user.status}}</span>
+  </div>
+</div>

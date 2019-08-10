@@ -1,0 +1,4 @@
+<div id="all-message" class="scrollable" style="height: 400px">
+  <app-message *ngFor="let message of listMessage " [message]="message"></app-message>
+</div>
+<app-send (press)="send($event)"></app-send>
