@@ -1,4 +1,4 @@
-<div id="all-message" class="scrollable" style="height: 400px">
+<div id="all-message" class="scrollable" style="height: 400px;background-image:url('assets/cbc22ca5a3d7568a742262639a9f6b3f.jpg') ">
   <app-message *ngFor="let message of listMessage " [message]="message"></app-message>
 </div>
 <app-send (press)="send($event)"></app-send>

@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
     this.user = new User();
     this.user.id = Math.round(Math.random() * 100);
     this.user.avatar = 'assets/head-659651_960_720.png';
-    this.user.status = false;
+    this.user.status = 'offline';
   }
 
   ngOnInit() {

@@ -25,11 +25,11 @@ export class AuthService {
   login(user: User) {
     for (let i = 0; i < this.listUser.length; i++) {
       if (user.name === this.listUser[i].name && user.password === this.listUser[i].password) {
-        this.count = i;
+        this.count++;
         this.success = true;
         this.currentUser = user;
-        this.currentUser.status = 'online';
-        this.listUser[i].status = 'online';
+        this.currentUser.status = 'Online';
+        this.listUser[i].status = 'Online';
         break;
       }
     }

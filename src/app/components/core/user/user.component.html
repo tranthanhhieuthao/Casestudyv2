@@ -1,7 +1,7 @@
-<div style="background: aqua" class="container">
+<div style="background-image: url('assets/mau-background-don-gian-02-1024x768.jpg');border: 1px black solid;margin: 2px" class="container">
   <img src="{{user.avatar}}" width="50" height="50" alt="Avatar">{{user.name}}
-  <div>
-  <div class="spinner-grow text-success" *ngIf="user.status === 'online'"></div>
-  <span>{{user.status}}</span>
+  <div class="float-right">
+  <div class="spinner-grow text-success " *ngIf="user.status === 'Online'"></div>
+  <span  >{{user.status}}</span>
   </div>
 </div>

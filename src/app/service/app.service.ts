@@ -8,17 +8,20 @@ import * as $ from 'jquery';
 })
 export class AppService {
   listUser: User[] = [
-    {id: 0, name: 'Thao', password: '123', status: 'offline', avatar: 'assets/head-659651_960_720.png'},
-    {id: 1, name: 'Dat', password: '123', status: 'offline', avatar: 'assets/head-659651_960_720.png'},
-    {id: 2, name: 'Anh', password: '123', status: 'offline', avatar: 'assets/head-659651_960_720.png'},
-    {id: 3, name: 'Duc', password: '123', status: 'offline', avatar: 'assets/head-659651_960_720.png'},
+    {id: 0, name: 'Tran Hieu', password: '123', status: 'Offline', avatar: 'assets/head-659651_960_720.png'},
+    {id: 1, name: 'Dao Dat', password: '123', status: 'Offline', avatar: 'assets/head-659651_960_720.png'},
+    {id: 2, name: 'Dinh Dat', password: '123', status: 'Offline', avatar: 'assets/head-659651_960_720.png'},
+    {id: 3, name: 'Tran Thao', password: '123', status: 'Offline', avatar: 'assets/head-659651_960_720.png'},
+    {id: 4, name: 'Linh Chi', password: '123', status: 'Offline', avatar: 'assets/head-659651_960_720.png'},
+    {id: 5, name: 'Xuan Hai', password: '123', status: 'Offline', avatar: 'assets/head-659651_960_720.png'},
   ];
 
   listMessage: Message[] = [
     {sender: this.listUser[0], content: 'Hello!', time: new Date().getHours()},
-    {sender: this.listUser[1], content: 'Hello!', time: new Date().getHours()},
-    {sender: this.listUser[2], content: 'Hello!', time: new Date().getHours()},
-    {sender: this.listUser[3], content: 'Hello!', time: new Date().getHours()}
+    {sender: this.listUser[1], content: 'Uong bia khong nhi?!', time: new Date().getHours()},
+    {sender: this.listUser[2], content: 'Cuoi tuan quay thoi!', time: new Date().getHours()},
+    {sender: this.listUser[3], content: 'yeah!!!!!!!', time: new Date().getHours()},
+    {sender: this.listUser[5], content: 'Lo hoc di con!!!!!!!', time: new Date().getHours()}
   ];
 
   constructor() {
