@@ -8,7 +8,6 @@ import {LogoutComponent} from './components/shared/logout/logout.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
-  {path: 'logout', component: LogoutComponent},
   {path: 'chat', component: GroupChatComponent, canActivate: [AuthGuard]}
 ];
 
